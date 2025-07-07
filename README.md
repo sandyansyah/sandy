@@ -1,36 +1,156 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sandyka Portfolio Website
 
-## Getting Started
+A modern, responsive portfolio website built with Next.js 14, TypeScript, and Three.js featuring 3D animations and interactive elements.
 
-First, run the development server:
+## 🚀 Features
 
+- **Modern Tech Stack**: Next.js 14, TypeScript, Tailwind CSS
+- **3D Animations**: Interactive Three.js elements with mouse-following effects
+- **Dark/Light Mode**: Theme switching with next-themes
+- **Responsive Design**: Mobile-first approach with full responsiveness
+- **SEO Optimized**: Meta tags, Open Graph, and structured data
+- **Performance**: Optimized for Core Web Vitals
+- **Animations**: Smooth transitions with Framer Motion
+- **Interactive UI**: Hover effects, scroll animations, and dynamic content
+
+## 📦 Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/sandyansyah/portfolio.git
+cd portfolio
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+3. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Technologies Used
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Frontend
+- **Next.js 14** - React framework with App Router
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Utility-first CSS
+- **Framer Motion** - Animations
+- **Three.js** - 3D graphics
+- **React Three Fiber** - React renderer for Three.js
 
-## Learn More
+### Tools & Libraries
+- **next-themes** - Theme management
+- **React Icons** - Icon library
+- **ESLint** - Code linting
+- **PostCSS** - CSS processing
 
-To learn more about Next.js, take a look at the following resources:
+## 📁 Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+sandy-portfolio/
+├── app/
+│   ├── layout.tsx          # Root layout with theme provider
+│   ├── page.tsx           # Home page
+│   └── globals.css        # Global styles
+├── components/
+│   ├── 3d/
+│   │   ├── ParticlesBackground.tsx  # 3D particle system
+│   │   └── FloatingCube.tsx         # 3D animated shapes
+│   ├── layout/
+│   │   ├── Navbar.tsx              # Navigation bar
+│   │   └── Footer.tsx              # Footer component
+│   ├── sections/
+│   │   ├── Hero.tsx                # Hero section
+│   │   ├── About.tsx               # About section
+│   │   ├── Experience.tsx          # Work experience
+│   │   ├── Projects.tsx            # Projects showcase
+│   │   ├── Skills.tsx              # Skills section
+│   │   └── Contact.tsx             # Contact form
+│   └── ui/
+│       ├── AnimatedText.tsx        # Animated text component
+│       ├── ScrollProgress.tsx      # Scroll progress bar
+│       └── SectionTitle.tsx        # Section title component
+├── public/                         # Static assets
+├── package.json                    # Dependencies
+├── tsconfig.json                   # TypeScript config
+├── tailwind.config.js             # Tailwind CSS config
+├── next.config.js                 # Next.js config
+└── postcss.config.js              # PostCSS config
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎨 Features Breakdown
 
-## Deploy on Vercel
+### 3D Effects
+- Interactive particle background that responds to mouse movement
+- Floating 3D shapes with continuous animation
+- WebGL-powered graphics using Three.js
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Responsive Design
+- Mobile-first approach
+- Breakpoints for all device sizes
+- Touch-friendly interactions
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Performance
+- Lazy loading for images and components
+- Optimized bundle size
+- Smooth 60fps animations
+
+### SEO & Accessibility
+- Semantic HTML structure
+- Meta tags for social sharing
+- ARIA labels for accessibility
+- Structured data for search engines
+
+## 🚀 Deployment
+
+The website can be deployed on various platforms:
+
+### Vercel (Recommended)
+```bash
+npm run build
+vercel --prod
+```
+
+### Netlify
+```bash
+npm run build
+# Deploy the .next folder
+```
+
+### Self-hosting
+```bash
+npm run build
+npm run start
+```
+
+## 📝 Customization
+
+1. **Update Personal Info**: Edit the content in each section component
+2. **Change Colors**: Modify the color scheme in `tailwind.config.js`
+3. **Add Projects**: Update the projects array in `components/sections/Projects.tsx`
+4. **Modify 3D Elements**: Customize the Three.js components in `components/3d/`
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+## 👤 Contact
+
+Sandyka Ardiansyah
+- Email: sandyansyah356@gmail.com
+- LinkedIn: [linkedin.com/in/sandyka](https://www.linkedin.com/in/sandyka)
+- GitHub: [github.com/sandyansyah](https://github.com/sandyansyah)
+- Website: [www.sandykaa.com](https://www.sandykaa.com)
